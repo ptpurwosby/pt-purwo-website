@@ -22,11 +22,17 @@
             color: #fff;
             padding: 15px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
         }
         header img {
             max-width: 200px;
-            display: block;
-            margin: auto;
+            margin-left: 20px;
+        }
+        header h1, header p {
+            margin-left: 20px;
+            text-align: left;
         }
         nav {
             display: flex;
@@ -84,8 +90,10 @@
 <body>
     <header>
         <img src="Screen Shot 2025-02-18 at 4.36.13 PM.png" alt="PT. PURWO SURABAYA Logo">
-        <h1>PT. PURWO SURABAYA</h1>
-        <p>Reliable and Efficient Transportation Services</p>
+        <div>
+            <h1>PT. PURWO SURABAYA</h1>
+            <p>Reliable and Efficient Transportation Services</p>
+        </div>
     </header>
     <nav>
         <a href="#about">About Us</a>
@@ -126,4 +134,3 @@
     </footer>
 </body>
 </html>
-
