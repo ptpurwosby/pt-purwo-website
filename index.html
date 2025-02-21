@@ -14,42 +14,33 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
             overflow-x: hidden;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px;
+            background: #fff;
+            padding: 15px 50px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
         }
         header img {
-            max-width: 180px;
-            margin-left: 20px;
-        }
-        header div {
-            margin-left: 20px;
-            text-align: left;
+            max-width: 150px;
         }
         nav {
             display: flex;
-            justify-content: center;
-            background: #444;
-            padding: 10px;
-            animation: fadeIn 2s;
+            gap: 30px;
         }
         nav a {
-            color: white;
+            color: black;
             text-decoration: none;
-            padding: 15px 25px;
             font-weight: bold;
-            transition: background 0.3s ease-in-out;
+            font-size: 16px;
+            position: relative;
         }
-        nav a:hover {
-            background: #666;
-            border-radius: 5px;
+        nav a:hover,
+        nav a.active {
+            color: red;
         }
         section {
             padding: 30px;
@@ -59,13 +50,6 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            animation: slideUp 1s ease-in-out;
-        }
-        .image-container img {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            animation: fadeIn 3s;
         }
         .partners {
             display: flex;
@@ -79,38 +63,31 @@
             height: auto;
         }
         footer {
-            background: #333;
-            color: white;
+            background: #fff;
+            color: black;
             text-align: center;
             padding: 15px;
-            margin-top: 20px;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="Screen Shot 2025-02-18 at 4.36.13 PM.png" alt="PT. PURWO SURABAYA Logo">
-        <div>
-            <h1>PT. PURWO SURABAYA</h1>
-            <p>Trusted 4PL Logistics Provider Since 1977</p>
-        </div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Solutions</a>
+            <a href="#fleet">Logistics</a>
+            <a href="#partners">Clients</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#fleet">Our Fleet</a>
-        <a href="#partners">Our Partners</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="image-container">
-        <img src="background_1.jpg" alt="Comprehensive Logistics Solutions">
-    </div>
     <section id="about">
         <h2>About Us</h2>
         <p>Founded in 1977, PT. PURWO SURABAYA is a 4PL logistics company providing comprehensive logistics solutions, including sea freight, trucking, warehousing, and specialized cargo handling. We are trusted by both government and private sectors to deliver high-quality logistics services.</p>
     </section>
     <section id="services">
-        <h2>Our Services</h2>
+        <h2>Our Solutions</h2>
         <ul>
             <li>Sea Freight Services (FCL and LCL) to all Indonesia</li>
             <li>20' and 40' Trailer Trucking Transportation</li>
@@ -121,11 +98,11 @@
         </ul>
     </section>
     <section id="fleet">
-        <h2>Our Fleet</h2>
+        <h2>Logistics</h2>
         <p>Our modern fleet includes 20’ and 40’ trailer trucks, specialized cargo handling equipment, and rail transport options, ensuring seamless delivery and logistics operations.</p>
     </section>
     <section id="partners">
-        <h2>Our Partners</h2>
+        <h2>Clients</h2>
         <div class="partners">
             <img src="japfa.jpg" alt="Japfa">
             <img src="wonokoyo.jpg" alt="Wonokoyo">
@@ -136,17 +113,15 @@
             <img src="cpp.jpg" alt="CPP">
             <img src="duakelinci.jpg" alt="Dua Kelinci">
             <img src="semengresik1.jpg" alt="Semen Gresik">
-            <img src="garuda.jpg" alt="Siantar Top">
+            <img src="garuda.jpg" alt="Garuda Food">
         </div>
     </section>
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact</h2>
         <p>Email: pt.purwo@gmail.com</p>
         <p>Phone: <a href="https://wa.me/62881081891668" target="_blank">+62 881 08189 1668 (WhatsApp)</a></p>
         <p>Address: Jl. Tuban Raya No. 28, Surabaya, Indonesia</p>
-        <div class="social-media">
-            <p>Follow us on Instagram: <a href="https://www.instagram.com/ptpurwo.sby" target="_blank" style="color: black; font-family: inherit; font-size: inherit;">@ptpurwo.sby</a></p>
-        </div>
+        <p>Follow us on Instagram: <a href="https://www.instagram.com/ptpurwo.sby" target="_blank" style="color: black; font-family: inherit; font-size: inherit;">@ptpurwo.sby</a></p>
     </section>
     <footer>
         <p>&copy; 2025 PT. PURWO SURABAYA. All rights reserved.</p>
