@@ -67,30 +67,23 @@
             object-fit: cover;
             animation: fadeIn 3s;
         }
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .partners img {
+            max-width: 150px;
+            height: auto;
+        }
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 15px;
             margin-top: 20px;
-        }
-        .social-media {
-            margin-top: 20px;
-        }
-        .social-media a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-            display: inline-block;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideUp {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
@@ -106,10 +99,11 @@
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#fleet">Our Fleet</a>
+        <a href="#partners">Our Partners</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="image-container">
-        <img src="transport-banner.jpg" alt="Comprehensive Logistics Solutions">
+        <img src="transportation-banner.jpg" alt="Comprehensive Logistics Solutions">
     </div>
     <section id="about">
         <h2>About Us</h2>
@@ -130,10 +124,25 @@
         <h2>Our Fleet</h2>
         <p>Our modern fleet includes 20’ and 40’ trailer trucks, specialized cargo handling equipment, and rail transport options, ensuring seamless delivery and logistics operations.</p>
     </section>
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <div class="partners">
+            <img src="japfa.jpg" alt="Japfa">
+            <img src="wonokoyo.jpg" alt="Wonokoyo">
+            <img src="mataharisakti.jpg" alt="Matahari Sakti">
+            <img src="bricon.jpg" alt="Bricon">
+            <img src="pupukIndonesia.jpg" alt="Pupuk Indonesia">
+            <img src="pokphand.jpg" alt="Pokphand">
+            <img src="cpp.jpg" alt="CPP">
+            <img src="siantartop.jpg" alt="Siantar Top">
+            <img src="semengresik.jpg" alt="Semen Gresik">
+            <img src="siantartop.jpg" alt="Siantar Top">
+        </div>
+    </section>
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: pt.purwo@gmail.com</p>
-        <p>Phone: <a href="https://wa.me/62881081891668" target="_blank">+62-881-08189-1668 (Marketing)</a></p>
+        <p>Phone: <a href="https://wa.me/62881081891668" target="_blank">+62 881 08189 1668 (WhatsApp)</a></p>
         <p>Address: Jl. Tuban Raya No. 28, Surabaya, Indonesia</p>
         <div class="social-media">
             <p>Follow us on Instagram: <a href="https://www.instagram.com/ptpurwo.sby" target="_blank" style="color: black; font-family: inherit; font-size: inherit;">@ptpurwo.sby</a></p>
